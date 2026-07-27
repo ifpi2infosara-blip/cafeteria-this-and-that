@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This & That - Pedido Online</title>
+
+    <style>
+        /* Fundo geral da página */
+        body {
+            background-color: #FAF6F0; /* Fundo cor creme */
+            font-family: Arial, sans-serif;
+            max-width: 700px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        /* O CHARME LARANJA AO REDOR DO FORMULÁRIO */
+        form {
+            border: 3px solid #E65300; /* Borda principal em laranja vibrante */
+            border-radius: 12px;
+            padding: 25px;
+            background-color: #FFFFFF;
+        }
+
+        /* Bordas internas para organizar as seções */
+        fieldset {
+            border: 1px solid #E65300; /* Borda Laranja fina nos quadros */
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        /* cor principal da minha cafeteria (laranja vibrante) */
+        h1, h3, legend, summary {
+            color: #E65300; 
+            font-weight: bold;
+        }
+
+        /* Marrom cor de café */
+        label, p, option, optgroup, input, select, textarea, details {
+            color: #6F4E37;
+        }
+
+        /* Botão de envio mais charmoso */
+        input[type="submit"] {
+            background-color: #E65300;
+            color: #FFFFFF;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        /* Muda para o marrom café quando passar o mouse */
+        input[type="submit"]:hover {
+            background-color: #6F4E37; 
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center;">Cafeteria This & That</h1>
+    <p style="text-align: center; margin-bottom: 25px;">Monte seu pedido completo abaixo para retirada rápida no balcão!</p>
+
+    <form action="https://webhook.site/a323e2e4-57f5-468f-aaea-011f1f05d7e1SS" method="post">
+
+        <details>
+            <summary>Clique aqui para ver as Regras de Retirada</summary>
+            <p>Seu pedido ficará pronto em até 15 minutos. Apresente o nome do cliente no balcão para retirar seu café quentinho!</p>
+        </details>
+        
+        <br>
+
+        <fieldset>
+            <legend>1. Cardápio de Bebidas</legend>
+
+            <fieldset>
+                <legend>Cafés Espressos (Quentes)</legend>
+                <p>
+                    <strong>Americano (M: R$ 9,00 / G: R$ 9,50):</strong><br>
+                    <label><input type="checkbox" name="bebida" value="Americano M"> Média</label>
+                    <label><input type="checkbox" name="bebida" value="Americano G"> Grande</label>
+                </p>
+                <p>
+                    <strong>Cappuccino (M: R$ 9,00 / G: R$ 9,50):</strong><br>
+                    <label><input type="checkbox" name="bebida" value="Cappuccino M"> Média</label>
+                    <label><input type="checkbox" name="bebida" value="Cappuccino G"> Grande</label>
+                </p>
+                <p>
+                    <strong>Latte (M: R$ 12,00 / G: R$ 12,90):</strong><br>
+                    <label><input type="checkbox" name="bebida" value="Latte M"> Média</label>
+                    <label><input type="checkbox" name="bebida" value="Latte G"> Grande</label>
+                </p>
+                <p>
+                    <strong>Chocolate Belga (M: R$ 14,00 / G: R$ 14,30):</strong><br>
+                    <label><input type="checkbox" name="bebida" value="Chocolate Belga M"> Média</label>
+                    <label><input type="checkbox" name="bebida" value="Chocolate Belga G"> Grande</label>
+                </p>
+                <p>
+                    <strong>Mocha (M: R$ 15,00 / G: R$ 15,30):</strong><br>
+                    <label><input type="checkbox" name="bebida" value="Mocha M"> Média</label>
+                    <label><input type="checkbox" name="bebida" value="Mocha G"> Grande</label>
+                </p>
+                <p>
+                    <strong>White Mocha (M: R$ 16,00 / G: R$ 16,30):</strong><br>
+                    <label><input type="checkbox" name="bebida" value="White Mocha M"> Média</label>
+                    <label><input type="checkbox" name="bebida" value="White Mocha G"> Grande</label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Bebidas Geladas</legend>
+                <p>
+                    <strong>Caramelo (M: R$ 12,17 / G: R$ 12,75):</strong><br>
+                    <label><input type="checkbox" name="bebida_gelada" value="Caramelo M"> Média</label>
+                    <label><input type="checkbox" name="bebida_gelada" value="Caramelo G"> Grande</label>
+                </p>
+                <p>
+                    <strong>Biscoito com Creme (M: R$ 15,00 / G: R$ 15,90):</strong><br>
+                    <label><input type="checkbox" name="bebida_gelada" value="Biscoito com Creme M"> Média</label>
+                    <label><input type="checkbox" name="bebida_gelada" value="Biscoito com Creme G"> Grande</label>
+                </p>
+                <p>
+                    <strong>Baunilha (M: R$ 10,00 / G: R$ 10,00):</strong><br>
+                    <label><input type="checkbox" name="bebida_gelada" value="Baunilha M"> Média</label>
+                    <label><input type="checkbox" name="bebida_gelada" value="Baunilha G"> Grande</label>
+                </p>
+                <p>
+                    <strong>Matcha Cremoso (M: R$ 12,30 / G: R$ 12,90):</strong><br>
+                    <label><input type="checkbox" name="bebida_gelada" value="Matcha Cremoso M"> Média</label>
+                    <label><input type="checkbox" name="bebida_gelada" value="Matcha Cremoso G"> Grande</label>
+                </p>
+                <p>
+                    <strong>Café com Avelã (M: R$ 13,10 / G: R$ 14,30):</strong><br>
+                    <label><input type="checkbox" name="bebida_gelada" value="Café com Avelã M"> Média</label>
+                    <label><input type="checkbox" name="bebida_gelada" value="Café com Avelã G"> Grande</label>
+                </p>
+            </fieldset>
+        </fieldset>
+
+        <fieldset>
+            <legend>2. Lanches</legend>
+            <p>
+                <label for="queijo_quente">Queijo Quente (R$ 12,95):</label><br>
+                <input type="number" id="queijo_quente" name="qtd_queijo_quente" min="0" max="10" value="0">
+            </p>
+            <p>
+                <label for="pao_chapa">Pão na Chapa (R$ 14,30):</label><br>
+                <input type="number" id="pao_chapa" name="qtd_pao_chapa" min="0" max="10" value="0">
+            </p>
+            <p>
+                <label for="croissant">Croissant (R$ 15,00):</label><br>
+                <input type="number" id="croissant" name="qtd_croissant" min="0" max="10" value="0">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>3. Personalize seu Pedido</legend>
+
+            <p>
+                <label for="bebida_destaque">Bebida em Destaque da Semana:</label><br>
+                <select id="bebida_destaque" name="bebida_destaque">
+                    <option value="">-- Escolha um especial --</option>
+                    <optgroup label="Especiais Quentes">
+                        <option value="latte_canela">Latte Especial com Canela</option>
+                        <option value="mocha_avelan">Mocha com Avelã Torrada</option>
+                    </optgroup>
+                    <optgroup label="Especiais Gelados">
+                        <option value="frappe_caramelo">Frappé de Caramelo Salgado</option>
+                        <option value="iced_matcha">Iced Matcha com Leite de Coco</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <label for="calda">Sabor da Calda Extra no Copo:</label><br>
+                <input list="sabores_calda" id="calda" name="calda_extra" placeholder="Digite ou selecione...">
+                <datalist id="sabores_calda">
+                    <option value="Caramelo Salgado">
+                    <option value="Chocolate Amargo">
+                    <option value="Doce de Leite">
+                    <option value="Avelã">
+                    <option value="Baunilha">
+                </datalist>
+            </p>
+
+            <p>Adoçar a bebida?</p>
+            <label><input type="radio" name="adocante" value="sem_acucar" checked> Sem açúcar</label><br>
+            <label><input type="radio" name="adocante" value="com_acucar"> Com açúcar</label><br>
+            <label><input type="radio" name="adocante" value="adocante_diet"> Com adoçante</label>
+
+            <p>
+                <label for="observacoes">Observações do Pedido:</label><br>
+                <textarea id="observacoes" name="observacoes" rows="3" cols="35" maxlength="100" placeholder="Ex: Pouco gelo, sem lactose..."></textarea>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>4. Dados do Cliente</legend>
+
+            <p>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome_cliente" required placeholder="Digite seu nome">
+            </p>
+
+            <p>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email_cliente" required placeholder="seu@email.com">
+            </p>
+
+            <p>
+                <label for="telefone">Telefone:</label><br>
+                <input type="tel" id="telefone" name="telefone_cliente" placeholder="(00) 00000-0000">
+            </p>
+        </fieldset>
+
+        <div style="text-align: center;">
+            <input type="submit" value="Enviar Pedido This & That">
+        </div>
+
+    </form>
+
+</body>
+</html>
